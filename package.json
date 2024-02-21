@@ -1,0 +1,29 @@
+{
+  "name": "rgrefer",
+  "version": "0.1.0",
+  "description": "An easy to use referral system implmentation library for grammy",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wafiismail27/RgRefer.git"
+  },
+  "keywords": [
+    "refer",
+    "grammy",
+    "easy-to-use",
+    "bots",
+    "bot",
+    "telegram",
+    "refferral",
+    "system"
+  ],
+  "author": "ROBBING GAMER",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wafiismail27/RgRefer/issues"
+  },
+  "homepage": "https://github.com/wafiismail27/RgRefer#readme"
+}
