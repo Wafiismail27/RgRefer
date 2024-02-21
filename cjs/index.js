@@ -1,4 +1,4 @@
-import { Context, NextFunction } from "grammy";
+const { Context, NextFunction } = require("grammy");
 /**
  * This library is a middleware for the grammy bot library. It allows you to create a referral system for your bot.
  * Simple to use and easy to understand.
