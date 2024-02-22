@@ -12,8 +12,8 @@ const { Context, NextFunction } = require("grammy");
  */
 function refer(options) {
     const middlewareFn = async (ctx, next) => {
-        if (!ctx.hasChatType("private")) await next()
-        if (!ctx.hasCommand("start")) await next()
+        if (!ctx.hasChatType("private")) return await next()
+        if (!ctx.hasCommand("start")) return await next()
         if (await options.userExists(ctx.from?.id)) {
             await next()
             return;

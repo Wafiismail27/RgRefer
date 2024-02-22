@@ -1,6 +1,6 @@
 {
   "name": "rgrefer",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An easy to use referral system implmentation library for grammy",
   "main": "main.ts",
   "scripts": {
@@ -10,10 +10,7 @@
     "cjs"
   ],
   "exports": {
-    ".": {
-      "import": "./main.ts",
-      "require": "./cjs/index.js"
-    },
+    ".": "./main.ts",
     "./cjs": "./cjs/index.js"
   },
   "repository": {
@@ -30,6 +27,9 @@
     "refferral",
     "system"
   ],
+  "dependencies": {
+    "grammy": "^1.21.1"
+  },
   "author": "ROBBING GAMER",
   "license": "MIT",
   "bugs": {

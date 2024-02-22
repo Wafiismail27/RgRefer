@@ -17,7 +17,7 @@ npm install rgrefer
 
 ```javascript
 const { Bot } = require("grammy");
-const refer = require("rgrefer");
+const refer = require("rgrefer/cjs"); // Or import("rgrefer")
 
 const bot = new Bot("YOUR_BOT_TOKEN");
 
@@ -77,8 +77,7 @@ bot.use(refer({
 ## CommonJS Version
 
 If you need to use the CommonJS version of `rgrefer`, you can find it in the
-`rgrefer/cjs` directory. Even though `require("rgrefer")` by default exports the
-cjs
+`rgrefer/cjs` directory.
 
 ```javascript
 const refer = require("rgrefer/cjs");

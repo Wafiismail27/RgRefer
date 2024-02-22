@@ -27,8 +27,8 @@ function refer(options: {
     onStartUp: (ctx: Context) => Promise<void> | void,
 }) {
     const middlewareFn = async (ctx: Context, next: NextFunction) => {
-        if (!ctx.hasChatType("private")) await next()
-        if (!ctx.hasCommand("start")) await next()
+        if (!ctx.hasChatType("private")) return await next()
+        if (!ctx.hasCommand("start")) return await next()
         if (await options.userExists(ctx.from?.id)) {
             await next()
             return;
